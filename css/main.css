@@ -269,16 +269,6 @@ iframe.galleria {
     width: auto;
     position: relative;
 }
-@media screen and (max-width: 1140px) {
-    #mainContainer {
-        margin: 0px;
-    }
-}
-@media screen and (min-width: 1140px) and (max-width: 1440px) {
-    #mainContainer {
-        margin: 0px 60px;
-    }
-}
 
 /*-------------- blacktop --------------*/
 #blacktop {
@@ -1293,9 +1283,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	top: 14px;
 	background-image: url(../img/icon/wth-arrow.png);
 	display: block;
-	-webkit-transform: rotate(-90deg); /* Chrome y Safari */
-	-moz-transform: rotate(-90deg); /* Firefox */
-	-o-transform: rotate(-90deg); /* Opera */
+	-webkit-transform: rotate(-180deg); /* Chrome y Safari */
+	-moz-transform: rotate(-180deg); /* Firefox */
+	-o-transform: rotate(-180deg); /* Opera */
 }
 .l-menu__item-active::before {
 	-webkit-transform: rotate(0); /* Chrome y Safari */
@@ -1500,4 +1490,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+}
+.clearfix::after {
+    content: '';
+  display: table;
+  clear: both;
+}
+.clearfix::before {
+    content: '';
+  display: table;
 }
