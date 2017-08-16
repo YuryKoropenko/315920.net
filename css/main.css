@@ -421,7 +421,7 @@ iframe.galleria {
     /*margin-left: 182px;*/
 }
 #blacktop #blacktop-menu ul {
-    margin-left: -23px;
+    margin-left: 25px;
     margin-top: 2px;
     list-style: none;
 }
@@ -988,7 +988,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	letter-spacing: 0.5px;
 	color: #232323;
 }
-.dpCalculation__questions label::before {
+/*check*/
+.dpCalculation__question-1 label::before {
 	content: '';
 	width: 16px;
 	height: 16px;
@@ -1000,7 +1001,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	left: 0;
 	top: 1px
 }
-.dpCalculation__questions label::after {
+.dpCalculation__question-1 label::after {
 	content: '';
 	width: 11px;
 	height: 9px;
@@ -1013,6 +1014,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	left: 3px;
 	top: 5px;
 	display: none;
+}
+.dpCalculation__question-1 input[type="checkbox"] {
+    display: none;
+}
+.dpCalculation__questions input[type="checkbox"]:checked + label:after {
+    display: block !important;
 }
 .dpCalculation__questions input[type="radio"]:checked + label:after {
 	display: block !important;

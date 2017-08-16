@@ -16,4 +16,17 @@ $(document).ready(function() {
 		$('.l-menu').slideToggle();
 		return false;
 	});
+
+	/*logo-script*/
+	if ($(window).width() < 767) {
+
+		$('#logo img').attr('src', 'img/mob-header_logo.png');
+		$('#logo img').css('width', 'auto');
+		$('#logo').css({
+			'display': 'inline-block',
+			'width': 'auto'
+		});
+		$('.block-logo').css('text-align', 'center');
+	}
+	/*logo-script END*/
 });
