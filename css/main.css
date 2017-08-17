@@ -500,7 +500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 
 #header-sticky-wrapper{
     position:relative;
-    z-index:1000;
+    z-index:998;
 }
 
 #header-sticky-wrapper.is-sticky #header{
@@ -1506,4 +1506,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 .clearfix::before {
     content: '';
   display: table;
+}
+/*callback*/
+.b-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    z-index: 999;
+    display: none;
+}
+.b-popup__wp {
+    padding: 20px;
+    position: relative;
+}
+.b-popup__close {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.popup-bg {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.b-popup .fMeasurement__input input[type="text"] {
+    width: 100%;
 }

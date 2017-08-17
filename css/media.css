@@ -274,8 +274,16 @@
     top: 58px;
   }
 }
+@media only screen and (max-width: 430px) {
+  .b-popup {
+    width: 95%;
+  }
+}
 @media only screen and (min-width: 1200px) {
   #blacktop > ul > li input[type="button"] {
+    display: none;
+  }
+  .mob-l-menu {
     display: none;
   }
 }
