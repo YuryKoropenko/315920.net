@@ -421,7 +421,7 @@ iframe.galleria {
     /*margin-left: 182px;*/
 }
 #blacktop #blacktop-menu ul {
-    margin-left: 25px;
+    margin-left: 61px;
     margin-top: 2px;
     list-style: none;
 }
@@ -988,7 +988,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	letter-spacing: 0.5px;
 	color: #232323;
 }
-/*check*/
 .dpCalculation__question-1 label::before {
 	content: '';
 	width: 16px;
@@ -999,7 +998,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	-webkit-border-radius: 1px;
 	position: absolute;
 	left: 0;
-	top: 1px
+	top: 1px;
 }
 .dpCalculation__question-1 label::after {
 	content: '';
@@ -1016,10 +1015,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	display: none;
 }
 .dpCalculation__question-1 input[type="checkbox"] {
-    display: none;
+	display: none;
 }
 .dpCalculation__questions input[type="checkbox"]:checked + label:after {
-    display: block !important;
+	display: block !important;
 }
 .dpCalculation__questions input[type="radio"]:checked + label:after {
 	display: block !important;
@@ -1276,6 +1275,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	margin: 0;
     margin-top: 25px;
 }
+.l-menu ul {
+    list-style: none;
+}
 .l-menu__item {
 	display: block;
 	position: relative;
@@ -1290,9 +1292,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	top: 14px;
 	background-image: url(../img/icon/wth-arrow.png);
 	display: block;
-	-webkit-transform: rotate(-180deg); /* Chrome y Safari */
-	-moz-transform: rotate(-180deg); /* Firefox */
-	-o-transform: rotate(-180deg); /* Opera */
+	-webkit-transform: rotate(-90deg); /* Chrome y Safari */
+	-moz-transform: rotate(-90deg); /* Firefox */
+	-o-transform: rotate(-90deg); /* Opera */
 }
 .l-menu__item-active::before {
 	-webkit-transform: rotate(0); /* Chrome y Safari */
@@ -1313,6 +1315,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 }
 .l-menu__sub-item {
 	position: relative;
+}
+.l-menu__sub-item.active a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 12px;
+}
+.l-menu__sub.active {
+    display: block;
+}
+.l-menu__sub-item.active a::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #00b7c5;
+    position: absolute;
+    left: 0;
+    top: 14px;
 }
 .l-menu__sub-item > a:hover::before {
 	content: '';
@@ -1337,13 +1359,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
 	color: #fff;
 	padding-left: 12px;
 }
+.mob-menu input {
+    font-family: "framd";
+    font-size: 18px;
+    line-height: 10px;
+}
 .g-card {
     padding: 0 40px;
     background-color: #fff;
     margin-top: 25px;
 }
-.g-card img {
-    width: 100%;
+.t-slider img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.b-slider img {
+    width: 102%;
     height: auto;
 }
 .slick-arrow {
@@ -1385,8 +1417,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
     margin: 0 10px;
 }
 .b-slider__item {
-    padding: 0 10px;
+    margin: 0 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 .b-slider .slick-current {
     position: relative;
@@ -1395,8 +1428,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5353', end
     content: '';
     display: block;
     position: absolute;
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
     width: auto;
